@@ -23,7 +23,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
-    padding: 10px;
+    padding: 15px;
 }
 
 #contact {
@@ -89,7 +89,7 @@ header {
     width: 700px;
 }
 
-button {
+.button-container a {
     color: whitesmoke;
     font-size: 22px;
     padding: 10px;
@@ -100,7 +100,7 @@ button {
     transition: .2s ease;
 }
 
-button:hover {
+.button-container a:hover {
     color: #17c7ff;
     background: black;
     border: 1px solid whitesmoke;
@@ -187,14 +187,24 @@ header h1 {
     color: black;
 }
 
-.email-section button {
+.email-section a {
     color: black;
     font-weight: 600;
-    text-shadow: 0 0 0;
+    text-shadow: 0 0 0;    
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;    
+    border: 1px solid #17c7ff;
+    transition: .2s ease;
 }
 
-.email-section button:hover {
+.email-section a:hover {
     color: #17c7ff;
+    background: black;
+    border: 1px solid whitesmoke;
+    transition: .2s ease;
+    cursor: pointer;
 }
 
 footer {
@@ -279,4 +289,49 @@ footer p {
     .footer-container {
         flex-direction: column;
     }
+}
+
+@media only screen and (max-width:425px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .button-container {
+        width: 100%;
+    }
+
+    .support h1 {
+        font-size: 24px;
+    }
+
+    .support p {
+        font-size: 18px;
+    }
+
+    .support-container {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .email-section {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
 }
