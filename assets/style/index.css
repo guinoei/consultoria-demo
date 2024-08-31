@@ -275,6 +275,7 @@ footer p {
 
     .support p {
         font-size: 20px;
+        text-align: center;
     }
 
     .support-container {
@@ -288,6 +289,10 @@ footer p {
 
     .footer-container {
         flex-direction: column;
+    }
+
+    footer p {
+        text-align: center;
     }
 }
 
@@ -333,5 +338,26 @@ footer p {
     .footer-container {
         flex-direction: column;
     }
+}
 
+@media only screen and (max-width:320px) {
+    .middle-title h1 {
+        font-size: 22px;
+    }
+
+    .support {
+        width: 100%;
+    }
+
+    .support h1 {
+        font-size: 19px;
+    }
+
+    .support p {
+        font-size: 16px;
+    }
+
+    .footer-container img {
+        width: 100%;
+    }
 }
