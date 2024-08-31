@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+/* 2c83ff */
+
+nav {
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px;
+}
+
+#contact {
+    padding: 0 5px;
+}
+
+.sociais-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+.sociais i {
+    font-size: 30px;
+}
+
+.sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact {
+    transition: .2s ease;
+}
+
+.contact:hover {
+    color: #17c7ff;
+    text-decoration: underline;
+    transition: .2s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.sociais a:hover {
+    color: #17c7ff;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 550px;
+    background-image: url(/assets/img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    gap: 20px;
+}
+
+.button-container {
+    width: 700px;
+}
+
+button {
+    color: whitesmoke;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    text-shadow: 5px 5px 5px black;
+    border: 1px solid #17c7ff;
+    transition: .2s ease;
+}
+
+button:hover {
+    color: #17c7ff;
+    background: black;
+    border: 1px solid whitesmoke;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 58px;
+    text-shadow: 5px 5px 1px black;
+}
+
+.middle-section {
+    padding: 10px;
+    /* background: black; */
+}
+
+
+.middle-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background: black; */
+    height: 200px;
+}
+
+.middle-title h1 {
+    font-size: 28px;
+    color: black;
+}
+
+.support-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(/assets/img/building.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.support {
+    gap: 16px;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.support i {
+    font-size: 55px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+
+.support h1 {
+    font-size: 28px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+}
+
+.support p {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.email-section {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.email-section h1 {
+    font-size: 28px;
+    color: black;
+}
+
+.email-section button {
+    color: black;
+    font-weight: 600;
+    text-shadow: 0 0 0;
+}
+
+.email-section button:hover {
+    color: #17c7ff;
+}
+
+footer {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer img {
+    width: 350px;
+}
+
+footer p {
+    color: whitesmoke;
+    padding: 5px 0;
+}
+
+.footer-container {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sociais-footer {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sociais-icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sociais-icones a {
+    font-size: 42px;
+}
+
+@media only screen and (max-width:1024px) {
+    header h1 {
+        font-size: 50px;
+    }
+
+    .support h1 {
+        font-size: 22px;
+    }
+
+    .support p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .support h1 {
+        font-size: 28px;
+    }
+
+    .support p {
+        font-size: 20px;
+    }
+
+    .support-container {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .email-section {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
