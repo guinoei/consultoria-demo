@@ -225,7 +225,7 @@ footer p {
 }
 
 .footer-container {
-    gap: 60px;
+    gap: 30px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -239,11 +239,19 @@ footer p {
     flex-direction: column;
 }
 
+.sociais-footer a {
+    font-size: 16px;
+}
+
 .sociais-icones {
-    width: 200px;
+    width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.sociais-icones p {
+    font-size: 14px;
 }
 
 @media only screen and (max-width:1024px) {
@@ -355,5 +363,17 @@ footer p {
 
     .footer-container img {
         width: 100%;
+    }
+
+    .sociais-icones {
+        width: 100%;
+    }
+    
+    .sociais-footer a {
+        font-size: 14px;
+    }
+
+    .sociais-icones p {
+        font-size: 12px;
     }
 }
